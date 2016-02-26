@@ -3,9 +3,8 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background: url("/images/stars.jpg") no-repeat center center;
+    background: #042349  url("/images/galaxy.jpg") repeat center top;
     background-size: cover;
-    background-color: #042349;
     color: #000000;
     text-align: center;
     font-weight: 300;
@@ -42,29 +41,48 @@ a:hover {
     margin: 0 auto;
     width: 75%;
     background-color: white;
+
 }
 
 main {
-    height: 100vh;
+    height: 90vh;
 }
+
 p {
     margin: 0 10%;
-    text-transform: ;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 h1, h2 {
-    margin: 1;
+    margin: 1%;
     padding: 7%;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 img {
     margin: 5%;
     max-width: 75%;
+    max-height: 100%;
 }
+
 footer {
-    margin: 15% 10% 15% 10%;
-    padding: 7%;
+    margin: 5% 10% 5% 10%;
+    padding: 7% 0 2% 0;
+    font-size: 75%;
+}
+
+#timeline {
+    transition: all .2s ease-in-out;
+}
+
+#timeline:hover {
+    transform: scale(1.1);
+}
+
+.quote {
+    padding: 15%;
+    color: #666666;
 }
 

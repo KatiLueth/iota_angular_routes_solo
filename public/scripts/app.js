@@ -6,17 +6,18 @@ myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/continuum', {
             templateUrl: '/views/templates/continuum.html',
-            //controller: 'HomeController'
+            controller: 'ContinuumController'
         })
         .when('/drWho', {
             templateUrl: '/views/templates/drWho.html',
-            //controller: 'AnotherController'
+            controller: 'DrWhoController'
         })
         .when('/mcFly', {
             templateUrl: '/views/templates/mcFly.html',
-            //controller: 'HomeController'
+            controller: 'McFlyController'
         })
         .otherwise({
-            redirectTo: 'home'
+            redirectTo: 'home',
+            templateUrl: '/views/templates/home.html'
         });
 }]);
